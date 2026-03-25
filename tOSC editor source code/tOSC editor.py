@@ -400,8 +400,20 @@ def process_node(node, log, scripts, preset_data=None):
                     messages_el.remove(osc)
                 for osc in preset["messages_xml"].findall("osc"):
                     messages_el.append(copy.deepcopy(osc))
+            else:
+                if control_type in ("RADAR", "XY"):
+                    for osc in messages_el.findall("osc"):
+                        messages_el.remove(osc)
+                    for msg in build_xy_radar_messages():
+                        messages_el.append(msg)
+                elif control_type == "GRID":
+                    for osc in messages_el.findall("osc"):
+                        messages_el.remove(osc)
+                    for msg in build_grid_messages():
+                        messages_el.append(msg)
 
-        script = scripts.get(ui_name, "").strip()
+        script = scripts.get(ui_name, "").strip()        
+                     
         if script:
             set_script(node, script)
 
