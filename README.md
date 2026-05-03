@@ -1,6 +1,12 @@
 # tOSC Toolbox
 
-A set of scripts and tools that streamline building TouchOSC interfaces for TouchDesigner. Handles layout, styling, address fixes, runtime behavior, preset systems, and parameter mapping.
+![Status](https://img.shields.io/badge/Status-1.0-blue)
+![Platform](https://img.shields.io/badge/Platform-Windows-green)
+![TouchDesigner](https://img.shields.io/badge/TouchDesigner-2025.32280%2B-violet)
+![TouchOSC](https://img.shields.io/badge/TouchOSC-1.2%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+A set of scripts and tools that streamline building [TouchOSC](https://hexler.net/touchosc) interfaces for [TouchDesigner](https://derivative.ca/).
 
 The toolbox has three parts:
 
@@ -170,8 +176,6 @@ The Remapper exports its incoming channels chronologically into the parameters o
     - Re-init the UI once for control names to update.
 6. Delete leftover (unused) labels.
 7. Open the **tOSC editor**, import your `.tosc`, and run it.
-
-> 📷 _GIF: the full interface-setup flow — drop controls, group, paste script, run, add master, re-run._
 
 ### Connection
 
