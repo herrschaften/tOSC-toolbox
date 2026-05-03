@@ -21,7 +21,9 @@ A Lua script pasted into the script field at the document root, then run with th
 - **Labels** — Labels must be **pre-placed** at root (a "label pool") — the script moves and styles them, it does not create them. Add more labels than you think you'll need; leftovers can be deleted after running.
 - **Master style** — copies style parameters (color, background, outline, corner radius, grid color) from a single tagged control to every other control. Place one control at root, set its tag to `master`, and style it however you want — that style propagates on the next run.
 
-![unstyledUI](docs/img/unstyledUI.png) ![styledUI](docs/img/styledUI.png)
+| Before | After |
+|:---:|:---:|
+| ![unstyledUI](docs/img/unstyledUI.png) | ![styledUI](docs/img/styledUI.png) |
 
 ### Settings
 
